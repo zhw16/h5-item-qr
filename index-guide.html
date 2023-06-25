@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- Bootstrap 样式表 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- jQuery 库 -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/index-guide.css"/>
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center itemName">事项名称</h1>
+    <div class="guide-img"></div>
+    <div class="tabs-container">
+        <ul class="nav nav-tabs nav-fill" id="tab-calu">
+            <!--默认激活-->
+            <li class="active"><a data-toggle="tab" href="#tab1" class="tab-css">基础信息</a></li>
+            <li><a data-toggle="tab" href="#tab2" class="tab-css">受理条件</a></li>
+            <li><a data-toggle="tab" href="#tab3" class="tab-css">办事地点</a></li>
+            <li><a data-toggle="tab" href="#tab4" class="tab-css">办理流程</a></li>
+            <li><a data-toggle="tab" href="#tab5" class="tab-css">申请材料</a></li>
+        </ul>
+
+
+        <div class="tab-content">
+            <div id="tab1" class="tab-pane active">
+                这是个第一个页面
+            </div>
+            <div id="tab2" class="tab-pane">
+                这是个第一个页面
+            </div>
+            <div id="tab3" class="tab-pane">
+               这是个第三个页面
+            </div>
+            <div id="tab4" class="tab-pane">
+                这是个第四个页面
+            </div>
+            <div id="tab5" class="tab-pane">
+               这是个第五个页面
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="js/index-guide.js" type="module"></script>
+</body>
+</html>

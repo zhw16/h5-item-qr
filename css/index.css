@@ -1,0 +1,145 @@
+/* 默认样式，适用于所有设备 */
+body {
+    margin-right: 0%;
+    margin-left: 0%;
+    background-color: #FAFEFF;
+}
+
+.button1 {
+    display: none;
+}
+
+.button2 {
+    height: 30px;
+    width: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* 媒体查询，适用于电脑屏幕 移除a-left */
+@media screen and (min-width: 768px) {
+    body {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 40px;
+    }
+
+    .content-right {
+        margin-right: 20px; /* 可根据需要调整间距 */
+    }
+
+    /*按钮变大*/
+    .button1 {
+        display: block;
+        width: 100px;
+        height: 35px;
+    }
+
+    .button2 {
+
+        width: 100px;
+        height: 35px;
+
+    }
+
+    .content-left.title {
+        font-size: 20px;
+    }
+
+    .search {
+        margin-bottom: 20px;
+    }
+
+    .a-left {
+        /* 禁用超链接的交互性 */
+        pointer-events: none;
+    }
+    /*左侧标题*/
+    .poi-title {
+        font-size: 18px;
+        font-weight: 800;
+    }
+    /*办事地址*/
+    .poi-address{
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+}
+
+.button1, .button2 {
+    background-color: #ebf6fd;
+    border: 0;
+    border-radius: 5px;
+    color: #1768FC;
+    position: relative;
+}
+
+.button1:hover {
+    background-color: #1768FC;
+    color: #ffffff;
+}
+
+.button2:hover {
+    background-color: #1768FC;
+    color: #ffffff;
+}
+
+/*按钮变左侧*/
+.poi-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-left {
+    flex: 1;
+}
+
+/*字体悬浮鼠标变颜色*/
+.title:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.search {
+    color: #3572ff;
+}
+
+.enlarge-font-title {
+    font-size: 25px;
+
+}
+
+.enlarge-font-address {
+    font-size: 15px;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/logo.jpg);
+    height: 15em;
+    width: 100%;
+}
+
+.myText {
+    font-size: 2em;
+    font-weight: bold;
+    color: #b29676;
+    margin:1em auto auto 1em; /* 可选，去除段落的默认边距 */
+}
+
+
+
+

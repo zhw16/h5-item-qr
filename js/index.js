@@ -1,0 +1,95 @@
+$('title').html('一事一码-办事政策列表')
+import {data} from "./sourcedata.js";
+//要拼接的数据
+var html = '';
+//默认展示全部
+data.forEach(function (item) {
+    html += '<li class="poibox" data-ps="data.position" data-name="data.name">' +
+        '<div class="poi-content">' +
+        '<a class="a-left" href="' + item.codeItem + '">' +
+        '<div class="content-left">' +
+        '<span class="title poi-title">' + item.eventName + '</span>' +
+        '<div class="poi-address">' + item.officeHall + '</div>' +
+        '</div>' +
+        '</a>' +
+        '<div class="content-right">' +
+        '<div class="buttons">' +
+        '<button class="button1" id="' + item.eventId + '">一事一码</button>' +
+        '<button class="button2" id="' + item.eventId + '">办事指南</button>' +
+        '</div>' +
+        '</div>' +
+        '</div>' +
+        '</li>';
+});
+$(".ret-ul").append(html);
+
+
+//搜索事项方法
+function searchItems() {
+    var keyword = $("#searchIn").val(); // 获取搜索框中的关键词
+    keyword = keyword.trim().toLowerCase(); // 去除首尾空格并转换为小写
+
+    $(".poi-title").each(function () {
+        var itemName = $(this).text().toLowerCase(); // 获取每个事项名称并转换为小写
+        if (itemName.includes(keyword)) {
+            $(this).parent().parent().parent().parent().show(); // 显示匹配到的事项
+        } else {
+            $(this).parent().parent().parent().parent().hide(); // 隐藏未匹配到的事项
+        }
+    });
+}
+
+$("#search").click(searchItems); // 点击搜索按钮触发搜索
+$("#searchIn").keypress(function (event) {
+    if (event.which === 13) { // 监听 Enter 键（按键码为13）
+        searchItems();
+        event.preventDefault(); // 阻止默认的 Enter 键行为（如提交表单）
+    }
+});
+
+
+//添加二维码悬浮
+// 为 button1 按钮添加悬浮事件
+$(".button1").hover(
+    function (e) {
+        console.log(e);
+        var eventId = $(this).attr("id"); // 获取按钮所在链接的地址
+        var x = e.clientX;
+        var y = e.clientY;
+        $("<img>")
+            .attr("src", "https://citizen.smkzz.com:8014/qr/" + eventId + ".jpg")
+            .addClass("hover-qrcode")
+            .css({
+                //position: "absolute",
+                top: y + "px", /* 根据需要调整图片的位置 */
+                left: x + "px", /* 根据需要调整图片的位置 */
+                //transform: "translateX(-50%)",
+                width: "100px", /* 根据需要调整图片的尺寸 */
+                height: "100px", /* 根据需要调整图片的尺寸 */
+                //background-size: "cover",
+                //background-position: " center",
+                "z-index": "99999", /* 确保图片位于其他内容之上 */
+                //pointer-events: "none", /* 防止图片遮挡按钮的交互 */
+            })
+            .appendTo($(this).parent().parent());
+        // 当鼠标悬浮时添加一个类名来改变当前文字大小
+        $(this).parent().parent().siblings('.content-left').find('.poi-title').addClass('enlarge-font-title');
+        $(this).parent().parent().siblings('.content-left').find('.poi-address').addClass('enlarge-font-address');
+    },
+    function () {
+        $(this)
+            .parent().parent()
+            .find(".hover-qrcode")
+            .remove();
+        // 当鼠标移开时移除类名恢复字体大小
+        $(this).parent().parent().siblings('.content-left').find('.poi-title').removeClass('enlarge-font-title');
+        $(this).parent().parent().siblings('.content-left').find('.poi-address').removeClass('enlarge-font-address');
+    }
+);
+
+//点击button2跳转页面
+$('.button2').click(function() {
+    var eventId = $(this).attr("id"); // 获取按钮所在链接的地址
+    window.location.href = './index-guide.html?eventId='+eventId;
+});
+
