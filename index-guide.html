@@ -2,51 +2,224 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Guide Page</title>
     <!-- Bootstrap 样式表 -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <!-- jQuery 库 -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Bootstrap JavaScript -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index-guide.css"/>
+    <style>
+
+    </style>
+
 </head>
 <body>
 <div class="container">
-    <h1 class="text-center itemName">事项名称</h1>
-    <div class="guide-img"></div>
+    <table class="table mt-3">
+        <tbody>
+        <tr>
+            <th>办理部门</th>
+            <td>广西壮族自治区自然资源厅</td>
+            <th>服务对象</th>
+            <td>企业法人,事业法人</td>
+        </tr>
+        <tr>
+            <th class="vertical-align-middle">办理时间</th>
+            <td>工作日：上午9:00-12:00、下午13:30-16:30</td>
+            <th>办理地点</th>
+            <td>河南省郑州市中原区</td>
+        </tr>
+        <tr>
+            <th>咨询方式</th>
+            <td>0771—5595671</td>
+            <th>监督投诉方式</th>
+            <td>0771—5595845</td>
+        </tr>
+        </tbody>
+    </table>
+
+
     <div class="tabs-container">
-        <ul class="nav nav-tabs nav-fill" id="tab-calu">
-            <!--默认激活-->
-            <li class="active"><a data-toggle="tab" href="#tab1" class="tab-css">基础信息</a></li>
-            <li><a data-toggle="tab" href="#tab2" class="tab-css">受理条件</a></li>
-            <li><a data-toggle="tab" href="#tab3" class="tab-css">办事地点</a></li>
-            <li><a data-toggle="tab" href="#tab4" class="tab-css">办理流程</a></li>
-            <li><a data-toggle="tab" href="#tab5" class="tab-css">申请材料</a></li>
+        <ul class="nav nav-tabs nav-fill" id="tab-calu" style="height: 4em">
+            <!-- 默认激活 -->
+            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#tab1">基础信息</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab2">受理条件</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab3">办理流程</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab4">办事地点</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab5">申请材料</a></li>
         </ul>
 
-
         <div class="tab-content">
+            <div id="tab2" class="tab-pane mt-3">
+                <!--这是第二个页面-->
+                <div class="tab2Text">
+                    《地质灾害防治单位资质管理办法》（自然资源部令第8号）第七条 申请地质灾害防治单位资质的单位应当符合下列条件：
+                    　　（一）具有企业法人或者事业单位法人资格，其中申请地质灾害治理工程施工资质应当具有企业法人资格；
+                    　　（二）具有资源与环境类、土木水利类相关专业技术人员，其中单位技术负责人应当具有高级技术职称；专业技术人员中退休人员数量不超过本办法规定的专业技术人员最低数量要求的百分之十；
+                    　　（三）具有与从事的地质灾害防治活动相适应的技术装备和设施，其中申请地质灾害评估和治理工程勘查设计资质应当具备全站仪、水准仪、探地雷达等设备；
+                    　　（四）具有健全的安全管理体系和质量管理体系。
+                    《地质灾害防治单位资质管理办法》（自然资源部令第8号）第十七条
+                    地质灾害防治单位资质证书有效期届满需要继续从业的，地质灾害防治单位应当在有效期届满六十个工作日前向单位登记注册地的省级人民政府自然资源主管部门提出延续申请，并依照本办法第十二条有关规定提交申请材料。
+                    《地质灾害防治单位资质管理办法》（自然资源部令第8号）第十八条
+                    地质灾害防治单位名称、住所发生变更的，应当在有关事项变更后三十个工作日内向单位登记注册地的省级人民政府自然资源主管部门提交有关部门的核准材料，申请换发新的地质灾害防治单位资质证书。
+                    第十九条 地质灾害防治单位有下列情形之一的，单位登记注册地的省级人民政府自然资源主管部门应当依法予以注销资质：（五）地质灾害防治单位申请注销地质灾害防治单位资质的。
+                    《地质灾害防治单位资质管理办法》（自然资源部令第8号）第二十条 地质灾害防治单位资质证书遗失、损毁的，可以向单位登记注册地的省级人民政府自然资源主管部门申请补领。
+                </div>
+
+            </div>
             <div id="tab1" class="tab-pane active">
-                这是个第一个页面
+                <!-- 这是第一个页面-->
+                <table class="table mt-3">
+                    <tbody>
+                    <tr>
+                        <th>事项名称</th>
+                        <td>地质灾害治理工程施工乙级资质新设</td>
+                        <th>事项类型</th>
+                        <td>行政许可</td>
+                    </tr>
+                    <tr>
+                        <th class="vertical-align-middle">是否网办</th>
+                        <td>是</td>
+                        <th>年检或年审</th>
+                        <td>不年检或年审</td>
+                    </tr>
+                    <tr>
+                        <th>办理形式</th>
+                        <td>窗口办理,网上办理,快递申请</td>
+                        <th>办理进度查询途径</th>
+                        <td>网上查询</td>
+                    </tr>
+                    <tr>
+                        <th>查询方式</th>
+                        <td>http://dnr.gxzf.gov.cn/proSearchInit</td>
+                    </tr>
+                    <tr>
+                        <th>审查方式及标准</th>
+                        <td>标准如下：公示公告无异议或异议不成立。</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
-            <div id="tab2" class="tab-pane">
-                这是个第一个页面
+            <div id="tab3" class="tab-pane mt-3">
+                <!--这是第三个页面-->
+                <table class="table table-3">
+                    <thead>
+                    <tr>
+                        <th>办理环节</th>
+                        <th>办理步骤</th>
+                        <th>办理人员</th>
+                        <th>办理时限</th>
+                        <th>审查标准</th>
+                        <th>办理结果</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="table-cell-content">收件与受理</div>
+                        </td>
+                        <td>
+                            <div class="table-cell-content">网上预审（所用时限不计入承诺办结时限）</div>
+                        </td>
+                        <td>
+                            <div class="table-cell-content">审批办人员</div>
+                        </td>
+                        <td>
+                            <div class="table-cell-content">3</div>
+                        </td>
+                        <td>
+                            <div class="table-cell-content">1、申请权限是否是厅本级2、申请材料是否齐全、符合法定要求3、填报申请内容是否正确、符合要求</div>
+                        </td>
+                        <td>
+                            <div class="table-cell-content">作出预审是否通过决定，若不通过，告知补正要求及标准</div>
+                        </td>
+                    </tr>
+                    <!-- 其他行 -->
+                    </tbody>
+                </table>
             </div>
-            <div id="tab3" class="tab-pane">
-               这是个第三个页面
+            <div id="tab4" class="tab-pane mt-3">
+                <!--这是第四个页面，办事地点-->
+                <table class="table table-4">
+                    <thead>
+                    <tr>
+                        <th>窗口名称</th>
+                        <th>窗口电话</th>
+                        <th>办理时间</th>
+                        <th>办理地点</th>
+                        <th>交通指引</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="table-cell-content">政务服务中心3楼自然资源厅12号窗口</div>
+                        </td>
+                        <td>
+                            <div class="table-cell-content">0771-5595671</div>
+                        </td>
+                        <td>
+                            <div class="table-cell-content">工作日：上午9:00-12:00、下午13:30-16:30</div>
+                        </td>
+                        <td>
+                            <div class="table-cell-content">工作日：上午9:00-12:00、下午13:30-16:30</div>
+                        </td>
+                        <td>
+                            <div class="table-cell-content">
+                                可乘南宁地铁1号线至金湖广场站下车C2出口左转步行或骑共享单车沿金浦路至第三个十字路口后右转直行约208m即可到达；或乘604路车在市一埌东医院站下车，步行或骑共享单车往东方向行约300m，在十字路口右转约50m即可到达。
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
-            <div id="tab4" class="tab-pane">
-                这是个第四个页面
-            </div>
-            <div id="tab5" class="tab-pane">
-               这是个第五个页面
+            <div id="tab5" class="tab-pane mt-3">
+                <!-- 申请材料  这是第五个页面-->
+                <table class="table table-5">
+                    <thead>
+                    <tr>
+                        <th>材料名称</th>
+                        <th>材料填写样本</th>
+                        <th>来源渠道</th>
+                        <th>材料类型</th>
+                        <th>材料必要性</th>
+                        <th>受理标准</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="table-cell-content">资质申请表</div>
+                        </td>
+                        <td>
+                            <div class="table-cell-content">空白附件</div>
+                        </td>
+                        <td>
+                            <div class="table-cell-content">申请人自备</div>
+                        </td>
+                        <td>
+                            <div class="table-cell-content">原件</div>
+                        </td>
+                        <td>
+                            <div class="table-cell-content">容缺后补</div>
+                        </td> <td>
+                            <div class="table-cell-content">1.原件合法有效；2.电子件清晰，与原件核对无异。</div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
-
 </div>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="./js/vconsole.min.js"></script>
 <script src="js/index-guide.js" type="module"></script>
+<script>
+    // 初始化
+    var vConsole = new VConsole();
+    console.log(1230);
+</script>
 </body>
 </html>

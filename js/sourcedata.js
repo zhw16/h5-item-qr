@@ -5,7 +5,7 @@ export const data =
             "eventName": "地质灾害治理工程施工乙级资质变更",
             "officeHall": "广西壮族自治区自然资源厅",
             "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "http://zwfw.gxzf.gov.cn/gxzwfw/workhandguide/infos.do?taskCode=11450000007565194H200011501500504",
+            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
             "workAttentionAddress": "办事指南地址",
             "workAttention": {//办事指南
                 "workId": "事项id",
@@ -29,7 +29,7 @@ export const data =
             "eventName": "事项名称02",
             "officeHall": "办理机构",
             "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "http://zwfw.gxzf.gov.cn/gxzwfw/workhandguide/infos.do?taskCode=11450000007565194H200011501500504",
+            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
             "workAttentionAddress": "办事指南地址",
             "workAttention": {//办事指南
                 "workId": "事项id",
@@ -48,7 +48,7 @@ export const data =
             "eventName": "事项名称03",
             "officeHall": "办理机构",
             "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "http://zwfw.gxzf.gov.cn/gxzwfw/workhandguide/infos.do?taskCode=11450000007565194H200011501500504",
+            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
             "workAttentionAddress": "办事指南地址",
             "workAttention": {//办事指南
                 "workId": "事项id",
@@ -67,7 +67,7 @@ export const data =
             "eventName": "事项名称04",
             "officeHall": "办理机构",
             "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "http://zwfw.gxzf.gov.cn/gxzwfw/workhandguide/infos.do?taskCode=11450000007565194H200011501500504",
+            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
             "workAttentionAddress": "办事指南地址",
             "workAttention": {//办事指南
                 "workId": "事项id",
@@ -86,7 +86,7 @@ export const data =
             "eventName": "事项名称05",
             "officeHall": "办理机构",
             "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "http://zwfw.gxzf.gov.cn/gxzwfw/workhandguide/infos.do?taskCode=11450000007565194H200011501500504",
+            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
             "workAttentionAddress": "办事指南地址",
             "workAttention": {//办事指南
                 "workId": "事项id",
@@ -105,7 +105,7 @@ export const data =
             "eventName": "事项名称06",
             "officeHall": "办理机构",
             "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "http://zwfw.gxzf.gov.cn/gxzwfw/workhandguide/infos.do?taskCode=11450000007565194H200011501500504",
+            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
             "workAttentionAddress": "办事指南地址",
             "workAttention": {//办事指南
                 "workId": "事项id",

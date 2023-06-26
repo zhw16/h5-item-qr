@@ -4,15 +4,25 @@ body {
     margin-left: 0%;
     background-color: #FAFEFF;
 }
-
+/*一事一码*/
 .button1 {
+    height: 30px;
+    width: 60px;
+
+}
+/*办事指南*/
+.button2 {
     display: none;
 }
 
-.button2 {
-    height: 30px;
-    width: 60px;
-}
+/*.button1 {*/
+/*    display: none;*/
+/*}*/
+
+/*.button2 {*/
+/*    height: 30px;*/
+/*    width: 60px;*/
+/*}*/
 
 a {
     text-decoration: none;
@@ -36,7 +46,7 @@ a {
         margin-right: 20px; /* 可根据需要调整间距 */
     }
 
-    /*按钮变大*/
+    /*按钮变大,禁止按钮1访问超链接*/
     .button1 {
         display: block;
         width: 100px;
@@ -44,10 +54,9 @@ a {
     }
 
     .button2 {
-
+        display: block;
         width: 100px;
         height: 35px;
-
     }
 
     .content-left.title {
@@ -62,13 +71,15 @@ a {
         /* 禁用超链接的交互性 */
         pointer-events: none;
     }
+
     /*左侧标题*/
     .poi-title {
         font-size: 18px;
         font-weight: 800;
     }
+
     /*办事地址*/
-    .poi-address{
+    .poi-address {
         font-size: 15px;
         font-weight: 500;
     }
@@ -137,7 +148,7 @@ a {
     font-size: 2em;
     font-weight: bold;
     color: #b29676;
-    margin:1em auto auto 1em; /* 可选，去除段落的默认边距 */
+    margin: 1em auto auto 1em; /* 可选，去除段落的默认边距 */
 }
 
 

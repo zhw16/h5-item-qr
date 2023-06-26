@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Guide Page</title>
+    <!-- Bootstrap 样式表 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index-guide.css"/>
+    <style>
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        .table thead th {
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .table tbody td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+
+        .table tbody td:nth-child(4) {
+            width:8%;
+        }
+    </style>
+
+
+
+
+</head>
+<body>
+<div class="container">
+    <div class="tabs-container">
+        <ul class="nav nav-tabs nav-fill" id="tab-calu">
+            <!-- 默认激活 -->
+            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#tab1">基础信息</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab2">受理条件</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab3">办事地点</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab4">办理流程</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab5">申请材料</a></li>
+        </ul>
+
+        <div class="tab-content">
+
+            <div id="tab4" class="tab-pane">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>办理环节</th>
+                        <th>办理步骤</th>
+                        <th>办理人员</th>
+                        <th>办理时限</th>
+                        <th>审查标准</th>
+                        <th>办理结果</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="table-cell-content">收件与受理</div>
+                        </td>
+                        <td>
+                            <div class="table-cell-content">网上预审（所用时限不计入承诺办结时限）</div>
+                        </td>
+                        <td>
+                            <div class="table-cell-content">审批办人员</div>
+                        </td>
+                        <td>
+                            <div class="table-cell-content">3</div>
+                        </td>
+                        <td>
+                            <div class="table-cell-content">1、申请权限是否是厅本级2、申请材料是否齐全、符合法定要求3、填报申请内容是否正确、符合要求</div>
+                        </td>
+                        <td>
+                            <div class="table-cell-content">作出预审是否通过决定，若不通过，告知补正要求及标准</div>
+                        </td>
+                    </tr>
+                    <!-- 其他行 -->
+                    </tbody>
+                </table>
+
+
+            </div>
+            <div id="tab5" class="tab-pane">
+                这是第四个页面
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="./js/vconsole.min.js"></script>
+<script src="js/index-guide.js" type="module"></script>
+<script>
+    // 初始化
+    var vConsole = new VConsole();
+    console.log(1230);
+</script>
+</body>
+</html>
