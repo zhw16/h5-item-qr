@@ -9,6 +9,18 @@ function isMobile() {
 }
 
 $('title').html('一事一码-办事政策列表')
+// index的result高度
+// 获取屏幕高度
+var screenHeight = $(window).height();
+// 输出屏幕高度
+console.log('屏幕高度为: ' + screenHeight + 'px');
+//获取logo和搜索栏高度
+var logoHeight = $(".logo").height();
+var searchHeight = $(".search").height();
+console.log("logo高度和搜索高度分别为：" + logoHeight + "," + searchHeight);
+//给结果设置高度
+$("#retUl").css("height", screenHeight - logoHeight - searchHeight-18).css("overflow-y","auto");
+
 import {data} from "./sourcedata.js";
 //要拼接的数据
 var html = '';
@@ -33,7 +45,7 @@ data.forEach(function (item) {
         '</a>' +
         '<div class="content-right">' +
         '<div class="buttons" id="' + item.eventId + '">' +
-        '<button class="button1" id="' + item.eventId + '">一事一码</button>' +
+        '<button style="margin-right: 0.8em" class="button1" id="' + item.eventId + '">一事一码</button>' +
          button02 +
         '</div>' +
         '</div>' +

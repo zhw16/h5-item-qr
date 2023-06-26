@@ -140,7 +140,7 @@ a {
     align-items: center;
     justify-content: center;
     background-image: url(../assets/logo.jpg);
-    height: 15em;
+    height: 20%;
     width: 100%;
 }
 
@@ -150,7 +150,6 @@ a {
     color: #b29676;
     margin: 1em auto auto 1em; /* 可选，去除段落的默认边距 */
 }
-
 
 
 
