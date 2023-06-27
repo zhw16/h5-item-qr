@@ -2,426 +2,349 @@ export const data =
     [
         {
             "eventId": "01",
-            "eventName": "地质灾害治理工程施工乙级资质变更",
-            "officeHall": "广西壮族自治区自然资源厅",
+            "eventName": "地质灾害治理工程施工乙级资质变更01",
+            "officeHall": "河南省郑州市自然资源厅01",
             "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
             "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
-            "workAttentionAddress": "办事指南地址",
+            "workAttentionAddress": "办事指南地址01",
             "workAttention": {//办事指南
+                //上面
                 "workId": "事项id",
-                "workInfo": "自治区自然资源管理部门负责广西壮族自治区行政区域内地质灾害治理工程施工乙级资质（新设、延续、变更、补证、注销）的审批和管理。",
-                "workCondition": "《地质灾害防治单位资质管理办法》（自然资源部令第8号）第七条 申请地质灾害防治单位资质的单位应当符合下列条件：" +
-                    "《地质灾害防治单位资质管理办法》（自然资源部令第8号）第二十条 地质灾害防治单位资质证书遗失、损毁的，可以向单位登记注册地的省级人民政府自然资源主管部门申请补领。",
-                "workAddress": "南宁市青秀区怡宾路6号自治区政务服务中心3楼自然资源厅12号窗口",
-                "workProcess": "办理流程",
-                "workNeed": "资质申请表空白附件" +
-                    "样本附件" +
-                    "申请人自备0份原件必要否填报信息完整准确，字迹、印章清晰查看更多" +
-                    "单位合并（转制）的批复文件或企业合并方案及股东大会、董事会决议无申请人自备0份原件必要否1.原件合法有效；2.电子件清晰，与原件核对无异。查看更多" +
-                    "原地质灾害资质证书无政府部门核发1份原件容缺后补否原件合法有效查看更多",
-                "workOther": "无",
-                "workFree": "无",
-                "workProblem": "无"
+                "workDepartment": "办理部门01",
+                "serviceObject": "服务对象01",
+                "workTime": "工作日：上午9:00-12:00、下午13:30-16:30",
+                "workAddress": "河南省郑州市中原区博体路1号",
+                "consultWay": "0771—5595671",
+                "complaintWay": "0771—5595845",
+                //基础信息
+                "basicInfo": {
+                    "eventName": "事项01",
+                    "eventType": "行政许可",
+                    "onlineOrNot": "是",
+                    "as": "不年检或年审",
+                    "handingType": "窗口办理,网上办理,快递申请",
+                    "queryType": "网上查询",
+                    "progressQuery": "https://dnr.gxzf.gov.cn/proSearchInit",
+                    "standard": "标准如下：公示公告无异议或异议不成立。"
+                },
+                //受理条件
+                "HandlingCondition": {
+                    "HandlingCondition": "01《地质灾害防治单位资质管理办法》（自然资源部令第8号）第七条 申请地质灾害防治单位资质的单位应当符合下列条件： （一）具有企业法人或者事业单位法人资格，其中申请地质灾害治理工程施工资质应当具有企业法人资格； （二）具有资源与环境类、土木水利类相关专业技术人员，其中单位技术负责人应当具有高级技术职称；专业技术人员中退休人员数量不超过本办法规定的专业技术人员最低数量要求的百分之十； （三）具有与从事的地质灾害防治活动相适应的技术装备和设施，其中申请地质灾害评估和治理工程勘查设计资质应当具备全站仪、水准仪、探地雷达等设备； （四）具有健全的安全管理体系和质量管理体系。 《地质灾害防治单位资质管理办法》（自然资源部令第8号）第十七条 地质灾害防治单位资质证书有效期届满需要继续从业的，地质灾害防治单位应当在有效期届满六十个工作日前向单位登记注册地的省级人民政府自然资源主管部门提出延续申请，并依照本办法第十二条有关规定提交申请材料。 《地质灾害防治单位资质管理办法》（自然资源部令第8号）第十八条 地质灾害防治单位名称、住所发生变更的，应当在有关事项变更后三十个工作日内向单位登记注册地的省级人民政府自然资源主管部门提交有关部门的核准材料，申请换发新的地质灾害防治单位资质证书。 第十九条 地质灾害防治单位有下列情形之一的，单位登记注册地的省级人民政府自然资源主管部门应当依法予以注销资质：（五）地质灾害防治单位申请注销地质灾害防治单位资质的。 《地质灾害防治单位资质管理办法》（自然资源部令第8号）第二十条 地质灾害防治单位资质证书遗失、损毁的，可以向单位登记注册地的省级人民政府自然资源主管部门申请补领。"
+                },
+                //办理流程
+                "handlingProcess": [
+                    {
+                        "processName": "收件与受理",
+                        "Procedure": "网上预审（所用时限不计入承诺办结时限",
+                        "worker": "审批办人员",
+                        "limitTime": "3",
+                        "checkStandard": "1、申请权限是否是厅本级2、申请材料是否齐全、符合法定要求3、填报申请内容是否正确、符合要求",
+                        "result": "作出预审是否通过决定，若不通过，告知补正要求及标准",
+                    }, {
+                        "processName": "办理事件",
+                        "Procedure": "网上预审（所用时限不计入承诺办结时限",
+                        "worker": "审批办人员",
+                        "limitTime": "3",
+                        "checkStandard": "1、申请权限是否是厅本级2、申请材料是否齐全、符合法定要求3、填报申请内容是否正确、符合要求",
+                        "result": "作出预审是否通过决定，若不通过，告知补正要求及标准",
+                    }, {
+                        "processName": "完成办理",
+                        "Procedure": "网上预审（所用时限不计入承诺办结时限",
+                        "worker": "审批办人员",
+                        "limitTime": "3",
+                        "checkStandard": "1、申请权限是否是厅本级2、申请材料是否齐全、符合法定要求3、填报申请内容是否正确、符合要求",
+                        "result": "作出预审是否通过决定，若不通过，告知补正要求及标准",
+                    },
+                ],
+                //办事地点
+                "handingAddress": {
+                    "windowsName": "政务服务中心3楼自然资源厅12号窗口",
+                    "windowsPhone": "0771-5595671",
+                    "windowsTime": "工作日：上午9:00-12:00、下午13:30-16:30",
+                    "windowsAddress": "政务服务中心3楼自然资源厅12号窗口",
+                    "trafficGuide": "乘604路车在市一埌东医院站下车，步行或骑共享单车往东方向行约300m，在十字路口右转约50m即可到达。"
+                },
+                //申请材料
+                "applicationMaterial": [
+                    {
+                        "materialName": "材料名称01",
+                        "materialExample": "材料样本-空白附件",
+                        "materialSource": "申请人自备",
+                        "materialType": "原件",
+                        "materialNeed": "容缺后补",
+                        "materialStandard": "1.原件合法有效；2.电子件清晰，与原件核对无异。",
+
+                    },   {
+                        "materialName": "材料名称02",
+                        "materialExample": "材料样本-空白附件",
+                        "materialSource": "申请人自备",
+                        "materialType": "原件",
+                        "materialNeed": "容缺后补",
+                        "materialStandard": "1.原件合法有效；2.电子件清晰，与原件核对无异。",
+
+                    },
+                ],
             }
         },
         {
             "eventId": "02",
-            "eventName": "事项名称02",
-            "officeHall": "办理机构",
+            "eventName": "地质灾害治理工程施工乙级资质变更02",
+            "officeHall": "河南省郑州市自然资源厅02",
             "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
             "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
-            "workAttentionAddress": "办事指南地址",
+            "workAttentionAddress": "办事指南地址02",
             "workAttention": {//办事指南
+                //上面
                 "workId": "事项id",
-                "workInfo": "基础信息",
-                "workCondition": "受理条件",
-                "workAddress": "办事地点",
-                "workProcess": "办理流",
-                "workNeed": "申请材料",
-                "workOther": "特别程序",
-                "workFree": "收费标准",
-                "workProblem": "其他问题"
+                "workDepartment": "办理部门02",
+                "serviceObject": "服务对象02",
+                "workTime": "工作日：上午9:00-12:00、下午13:30-16:30",
+                "workAddress": "河南省郑州市中原区博体路1号",
+                "consultWay": "0771—5595671",
+                "complaintWay": "0771—5595845",
+                //基础信息
+                "basicInfo": {
+                    "eventName": "事项02",
+                    "eventType": "行政许可",
+                    "onlineOrNot": "是",
+                    "as": "不年检或年审",
+                    "handingType": "窗口办理,网上办理,快递申请",
+                    "queryType": "网上查询",
+                    "progressQuery": "https://dnr.gxzf.gov.cn/proSearchInit",
+                    "standard": "标准如下：公示公告无异议或异议不成立。"
+                },
+                //受理条件
+                "HandlingCondition": {
+                    "HandlingCondition": "02《地质灾害防治单位资质管理办法》（自然资源部令第8号）第七条 申请地质灾害防治单位资质的单位应当符合下列条件： （一）具有企业法人或者事业单位法人资格，其中申请地质灾害治理工程施工资质应当具有企业法人资格； （二）具有资源与环境类、土木水利类相关专业技术人员，其中单位技术负责人应当具有高级技术职称；专业技术人员中退休人员数量不超过本办法规定的专业技术人员最低数量要求的百分之十； （三）具有与从事的地质灾害防治活动相适应的技术装备和设施，其中申请地质灾害评估和治理工程勘查设计资质应当具备全站仪、水准仪、探地雷达等设备； （四）具有健全的安全管理体系和质量管理体系。 《地质灾害防治单位资质管理办法》（自然资源部令第8号）第十七条 地质灾害防治单位资质证书有效期届满需要继续从业的，地质灾害防治单位应当在有效期届满六十个工作日前向单位登记注册地的省级人民政府自然资源主管部门提出延续申请，并依照本办法第十二条有关规定提交申请材料。 《地质灾害防治单位资质管理办法》（自然资源部令第8号）第十八条 地质灾害防治单位名称、住所发生变更的，应当在有关事项变更后三十个工作日内向单位登记注册地的省级人民政府自然资源主管部门提交有关部门的核准材料，申请换发新的地质灾害防治单位资质证书。 第十九条 地质灾害防治单位有下列情形之一的，单位登记注册地的省级人民政府自然资源主管部门应当依法予以注销资质：（五）地质灾害防治单位申请注销地质灾害防治单位资质的。 《地质灾害防治单位资质管理办法》（自然资源部令第8号）第二十条 地质灾害防治单位资质证书遗失、损毁的，可以向单位登记注册地的省级人民政府自然资源主管部门申请补领。"
+                },
+                //办理流程
+                "handlingProcess": [
+                    {
+                        "processName": "收件与受理",
+                        "Procedure": "网上预审（所用时限不计入承诺办结时限",
+                        "worker": "审批办人员",
+                        "limitTime": "3",
+                        "checkStandard": "1、申请权限是否是厅本级2、申请材料是否齐全、符合法定要求3、填报申请内容是否正确、符合要求",
+                        "result": "作出预审是否通过决定，若不通过，告知补正要求及标准",
+                    }, {
+                        "processName": "办理事件",
+                        "Procedure": "网上预审（所用时限不计入承诺办结时限",
+                        "worker": "审批办人员",
+                        "limitTime": "3",
+                        "checkStandard": "1、申请权限是否是厅本级2、申请材料是否齐全、符合法定要求3、填报申请内容是否正确、符合要求",
+                        "result": "作出预审是否通过决定，若不通过，告知补正要求及标准",
+                    }, {
+                        "processName": "完成办理",
+                        "Procedure": "网上预审（所用时限不计入承诺办结时限",
+                        "worker": "审批办人员",
+                        "limitTime": "3",
+                        "checkStandard": "1、申请权限是否是厅本级2、申请材料是否齐全、符合法定要求3、填报申请内容是否正确、符合要求",
+                        "result": "作出预审是否通过决定，若不通过，告知补正要求及标准",
+                    },
+                ],
+                //办事地点
+                "handingAddress": {
+                    "windowsName": "政务服务中心3楼自然资源厅12号窗口",
+                    "windowsPhone": "0771-5595671",
+                    "windowsTime": "工作日：上午9:00-12:00、下午13:30-16:30",
+                    "windowsAddress": "政务服务中心3楼自然资源厅12号窗口",
+                    "trafficGuide": "乘604路车在市一埌东医院站下车，步行或骑共享单车往东方向行约300m，在十字路口右转约50m即可到达。"
+                },
+                //申请材料
+                "applicationMaterial": [
+                    {
+                        "materialName": "材料名称01",
+                        "materialExample": "材料样本-空白附件",
+                        "materialSource": "申请人自备",
+                        "materialType": "原件",
+                        "materialNeed": "容缺后补",
+                        "materialStandard": "1.原件合法有效；2.电子件清晰，与原件核对无异。",
+
+                    },   {
+                        "materialName": "材料名称02",
+                        "materialExample": "材料样本-空白附件",
+                        "materialSource": "申请人自备",
+                        "materialType": "原件",
+                        "materialNeed": "容缺后补",
+                        "materialStandard": "1.原件合法有效；2.电子件清晰，与原件核对无异。",
+
+                    },
+                ],
             }
         },
-        {
+ {
             "eventId": "03",
-            "eventName": "事项名称03",
-            "officeHall": "办理机构",
+            "eventName": "地质灾害治理工程施工乙级资质变更03",
+            "officeHall": "河南省郑州市自然资源厅03",
             "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
             "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
-            "workAttentionAddress": "办事指南地址",
+            "workAttentionAddress": "办事指南地址3",
             "workAttention": {//办事指南
+                //上面
                 "workId": "事项id",
-                "workInfo": "基础信息",
-                "workCondition": "受理条件",
-                "workAddress": "办事地点",
-                "workProcess": "办理流",
-                "workNeed": "申请材料",
-                "workOther": "特别程序",
-                "workFree": "收费标准",
-                "workProblem": "其他问题"
+                "workDepartment": "办理部门03",
+                "serviceObject": "服务对象03",
+                "workTime": "工作日：上午9:00-12:00、下午13:30-16:30",
+                "workAddress": "河南省郑州市中原区博体路1号",
+                "consultWay": "0771—5595671",
+                "complaintWay": "0771—5595845",
+                //基础信息
+                "basicInfo": {
+                    "eventName": "事项03",
+                    "eventType": "行政许可",
+                    "onlineOrNot": "是",
+                    "as": "不年检或年审",
+                    "handingType": "窗口办理,网上办理,快递申请",
+                    "queryType": "网上查询",
+                    "progressQuery": "https://dnr.gxzf.gov.cn/proSearchInit",
+                    "standard": "标准如下：公示公告无异议或异议不成立。"
+                },
+                //受理条件
+                "HandlingCondition": {
+                    "HandlingCondition": "03《地质灾害防治单位资质管理办法》（自然资源部令第8号）第七条 申请地质灾害防治单位资质的单位应当符合下列条件： （一）具有企业法人或者事业单位法人资格，其中申请地质灾害治理工程施工资质应当具有企业法人资格； （二）具有资源与环境类、土木水利类相关专业技术人员，其中单位技术负责人应当具有高级技术职称；专业技术人员中退休人员数量不超过本办法规定的专业技术人员最低数量要求的百分之十； （三）具有与从事的地质灾害防治活动相适应的技术装备和设施，其中申请地质灾害评估和治理工程勘查设计资质应当具备全站仪、水准仪、探地雷达等设备； （四）具有健全的安全管理体系和质量管理体系。 《地质灾害防治单位资质管理办法》（自然资源部令第8号）第十七条 地质灾害防治单位资质证书有效期届满需要继续从业的，地质灾害防治单位应当在有效期届满六十个工作日前向单位登记注册地的省级人民政府自然资源主管部门提出延续申请，并依照本办法第十二条有关规定提交申请材料。 《地质灾害防治单位资质管理办法》（自然资源部令第8号）第十八条 地质灾害防治单位名称、住所发生变更的，应当在有关事项变更后三十个工作日内向单位登记注册地的省级人民政府自然资源主管部门提交有关部门的核准材料，申请换发新的地质灾害防治单位资质证书。 第十九条 地质灾害防治单位有下列情形之一的，单位登记注册地的省级人民政府自然资源主管部门应当依法予以注销资质：（五）地质灾害防治单位申请注销地质灾害防治单位资质的。 《地质灾害防治单位资质管理办法》（自然资源部令第8号）第二十条 地质灾害防治单位资质证书遗失、损毁的，可以向单位登记注册地的省级人民政府自然资源主管部门申请补领。"
+                },
+                //办理流程
+                "handlingProcess": [
+                    {
+                        "processName": "收件与受理",
+                        "Procedure": "网上预审（所用时限不计入承诺办结时限",
+                        "worker": "审批办人员",
+                        "limitTime": "3",
+                        "checkStandard": "1、申请权限是否是厅本级2、申请材料是否齐全、符合法定要求3、填报申请内容是否正确、符合要求",
+                        "result": "作出预审是否通过决定，若不通过，告知补正要求及标准",
+                    }, {
+                        "processName": "办理事件",
+                        "Procedure": "网上预审（所用时限不计入承诺办结时限",
+                        "worker": "审批办人员",
+                        "limitTime": "3",
+                        "checkStandard": "1、申请权限是否是厅本级2、申请材料是否齐全、符合法定要求3、填报申请内容是否正确、符合要求",
+                        "result": "作出预审是否通过决定，若不通过，告知补正要求及标准",
+                    }, {
+                        "processName": "完成办理",
+                        "Procedure": "网上预审（所用时限不计入承诺办结时限",
+                        "worker": "审批办人员",
+                        "limitTime": "3",
+                        "checkStandard": "1、申请权限是否是厅本级2、申请材料是否齐全、符合法定要求3、填报申请内容是否正确、符合要求",
+                        "result": "作出预审是否通过决定，若不通过，告知补正要求及标准",
+                    },
+                ],
+                //办事地点
+                "handingAddress": {
+                    "windowsName": "政务服务中心3楼自然资源厅12号窗口",
+                    "windowsPhone": "0771-5595671",
+                    "windowsTime": "工作日：上午9:00-12:00、下午13:30-16:30",
+                    "windowsAddress": "政务服务中心3楼自然资源厅12号窗口",
+                    "trafficGuide": "乘604路车在市一埌东医院站下车，步行或骑共享单车往东方向行约300m，在十字路口右转约50m即可到达。"
+                },
+                //申请材料
+                "applicationMaterial": [
+                    {
+                        "materialName": "材料名称01",
+                        "materialExample": "材料样本-空白附件",
+                        "materialSource": "申请人自备",
+                        "materialType": "原件",
+                        "materialNeed": "容缺后补",
+                        "materialStandard": "1.原件合法有效；2.电子件清晰，与原件核对无异。",
+
+                    },   {
+                        "materialName": "材料名称02",
+                        "materialExample": "材料样本-空白附件",
+                        "materialSource": "申请人自备",
+                        "materialType": "原件",
+                        "materialNeed": "容缺后补",
+                        "materialStandard": "1.原件合法有效；2.电子件清晰，与原件核对无异。",
+
+                    },
+                ],
             }
         },
-        {
+ {
             "eventId": "04",
-            "eventName": "事项名称04",
-            "officeHall": "办理机构",
+            "eventName": "地质灾害治理工程施工乙级资质变更04",
+            "officeHall": "河南省郑州市自然资源厅04",
             "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
             "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
             "workAttentionAddress": "办事指南地址",
             "workAttention": {//办事指南
+                //上面
                 "workId": "事项id",
-                "workInfo": "基础信息",
-                "workCondition": "受理条件",
-                "workAddress": "办事地点",
-                "workProcess": "办理流",
-                "workNeed": "申请材料",
-                "workOther": "特别程序",
-                "workFree": "收费标准",
-                "workProblem": "其他问题"
-            }
-        },
-        {
-            "eventId": "05",
-            "eventName": "事项名称05",
-            "officeHall": "办理机构",
-            "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
-            "workAttentionAddress": "办事指南地址",
-            "workAttention": {//办事指南
-                "workId": "事项id",
-                "workInfo": "基础信息",
-                "workCondition": "受理条件",
-                "workAddress": "办事地点",
-                "workProcess": "办理流",
-                "workNeed": "申请材料",
-                "workOther": "特别程序",
-                "workFree": "收费标准",
-                "workProblem": "其他问题"
-            }
-        },
-        {
-            "eventId": "06",
-            "eventName": "事项名称06",
-            "officeHall": "办理机构",
-            "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
-            "workAttentionAddress": "办事指南地址",
-            "workAttention": {//办事指南
-                "workId": "事项id",
-                "workInfo": "基础信息",
-                "workCondition": "受理条件",
-                "workAddress": "办事地点",
-                "workProcess": "办理流",
-                "workNeed": "申请材料",
-                "workOther": "特别程序",
-                "workFree": "收费标准",
-                "workProblem": "其他问题"
-            }
-        },
-        {
-            "eventId": "07",
-            "eventName": "事项名称07",
-            "officeHall": "办理机构",
-            "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
-            "workAttentionAddress": "办事指南地址",
-            "workAttention": {//办事指南
-                "workId": "事项id",
-                "workInfo": "基础信息",
-                "workCondition": "受理条件",
-                "workAddress": "办事地点",
-                "workProcess": "办理流",
-                "workNeed": "申请材料",
-                "workOther": "特别程序",
-                "workFree": "收费标准",
-                "workProblem": "其他问题"
-            }
-        },
-        {
-            "eventId": "08",
-            "eventName": "事项名称08",
-            "officeHall": "办理机构",
-            "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
-            "workAttentionAddress": "办事指南地址",
-            "workAttention": {//办事指南
-                "workId": "事项id",
-                "workInfo": "基础信息",
-                "workCondition": "受理条件",
-                "workAddress": "办事地点",
-                "workProcess": "办理流",
-                "workNeed": "申请材料",
-                "workOther": "特别程序",
-                "workFree": "收费标准",
-                "workProblem": "其他问题"
-            }
-        }, {
-        "eventId": "09",
-        "eventName": "事项名称09",
-        "officeHall": "办理机构",
-        "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-        "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
-        "workAttentionAddress": "办事指南地址",
-        "workAttention": {//办事指南
-            "workId": "事项id",
-            "workInfo": "基础信息",
-            "workCondition": "受理条件",
-            "workAddress": "办事地点",
-            "workProcess": "办理流",
-            "workNeed": "申请材料",
-            "workOther": "特别程序",
-            "workFree": "收费标准",
-            "workProblem": "其他问题"
-        }
-    },
-        {
-            "eventId": "10",
-            "eventName": "事项名称10",
-            "officeHall": "办理机构",
-            "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
-            "workAttentionAddress": "办事指南地址",
-            "workAttention": {//办事指南
-                "workId": "事项id",
-                "workInfo": "基础信息",
-                "workCondition": "受理条件",
-                "workAddress": "办事地点",
-                "workProcess": "办理流",
-                "workNeed": "申请材料",
-                "workOther": "特别程序",
-                "workFree": "收费标准",
-                "workProblem": "其他问题"
-            }
-        },
-        {
-            "eventId": "11",
-            "eventName": "事项名称11",
-            "officeHall": "办理机构",
-            "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
-            "workAttentionAddress": "办事指南地址",
-            "workAttention": {//办事指南
-                "workId": "事项id",
-                "workInfo": "基础信息",
-                "workCondition": "受理条件",
-                "workAddress": "办事地点",
-                "workProcess": "办理流",
-                "workNeed": "申请材料",
-                "workOther": "特别程序",
-                "workFree": "收费标准",
-                "workProblem": "其他问题"
-            }
-        },
-        {
-            "eventId": "12",
-            "eventName": "事项名称12",
-            "officeHall": "办理机构",
-            "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
-            "workAttentionAddress": "办事指南地址",
-            "workAttention": {//办事指南
-                "workId": "事项id",
-                "workInfo": "基础信息",
-                "workCondition": "受理条件",
-                "workAddress": "办事地点",
-                "workProcess": "办理流",
-                "workNeed": "申请材料",
-                "workOther": "特别程序",
-                "workFree": "收费标准",
-                "workProblem": "其他问题"
-            }
-        },
-        {
-            "eventId": "13",
-            "eventName": "事项名称13",
-            "officeHall": "办理机构",
-            "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
-            "workAttentionAddress": "办事指南地址",
-            "workAttention": {//办事指南
-                "workId": "事项id",
-                "workInfo": "基础信息",
-                "workCondition": "受理条件",
-                "workAddress": "办事地点",
-                "workProcess": "办理流",
-                "workNeed": "申请材料",
-                "workOther": "特别程序",
-                "workFree": "收费标准",
-                "workProblem": "其他问题"
+                "workDepartment": "办理部门04",
+                "serviceObject": "服务对象04",
+                "workTime": "工作日：上午9:00-12:00、下午13:30-16:30",
+                "workAddress": "河南省郑州市中原区博体路1号",
+                "consultWay": "0771—5595671",
+                "complaintWay": "0771—5595845",
+                //基础信息
+                "basicInfo": {
+                    "eventName": "事项04",
+                    "eventType": "行政许可",
+                    "onlineOrNot": "是",
+                    "as": "不年检或年审",
+                    "handingType": "窗口办理,网上办理,快递申请",
+                    "queryType": "网上查询",
+                    "progressQuery": "https://dnr.gxzf.gov.cn/proSearchInit",
+                    "standard": "标准如下：公示公告无异议或异议不成立。"
+                },
+                //受理条件
+                "HandlingCondition": {
+                    "HandlingCondition": "04《地质灾害防治单位资质管理办法》（自然资源部令第8号）第七条 申请地质灾害防治单位资质的单位应当符合下列条件： （一）具有企业法人或者事业单位法人资格，其中申请地质灾害治理工程施工资质应当具有企业法人资格； （二）具有资源与环境类、土木水利类相关专业技术人员，其中单位技术负责人应当具有高级技术职称；专业技术人员中退休人员数量不超过本办法规定的专业技术人员最低数量要求的百分之十； （三）具有与从事的地质灾害防治活动相适应的技术装备和设施，其中申请地质灾害评估和治理工程勘查设计资质应当具备全站仪、水准仪、探地雷达等设备； （四）具有健全的安全管理体系和质量管理体系。 《地质灾害防治单位资质管理办法》（自然资源部令第8号）第十七条 地质灾害防治单位资质证书有效期届满需要继续从业的，地质灾害防治单位应当在有效期届满六十个工作日前向单位登记注册地的省级人民政府自然资源主管部门提出延续申请，并依照本办法第十二条有关规定提交申请材料。 《地质灾害防治单位资质管理办法》（自然资源部令第8号）第十八条 地质灾害防治单位名称、住所发生变更的，应当在有关事项变更后三十个工作日内向单位登记注册地的省级人民政府自然资源主管部门提交有关部门的核准材料，申请换发新的地质灾害防治单位资质证书。 第十九条 地质灾害防治单位有下列情形之一的，单位登记注册地的省级人民政府自然资源主管部门应当依法予以注销资质：（五）地质灾害防治单位申请注销地质灾害防治单位资质的。 《地质灾害防治单位资质管理办法》（自然资源部令第8号）第二十条 地质灾害防治单位资质证书遗失、损毁的，可以向单位登记注册地的省级人民政府自然资源主管部门申请补领。"
+                },
+                //办理流程
+                "handlingProcess": [
+                    {
+                        "processName": "收件与受理",
+                        "Procedure": "网上预审（所用时限不计入承诺办结时限",
+                        "worker": "审批办人员",
+                        "limitTime": "3",
+                        "checkStandard": "1、申请权限是否是厅本级2、申请材料是否齐全、符合法定要求3、填报申请内容是否正确、符合要求",
+                        "result": "作出预审是否通过决定，若不通过，告知补正要求及标准",
+                    }, {
+                        "processName": "办理事件",
+                        "Procedure": "网上预审（所用时限不计入承诺办结时限",
+                        "worker": "审批办人员",
+                        "limitTime": "3",
+                        "checkStandard": "1、申请权限是否是厅本级2、申请材料是否齐全、符合法定要求3、填报申请内容是否正确、符合要求",
+                        "result": "作出预审是否通过决定，若不通过，告知补正要求及标准",
+                    }, {
+                        "processName": "完成办理",
+                        "Procedure": "网上预审（所用时限不计入承诺办结时限",
+                        "worker": "审批办人员",
+                        "limitTime": "3",
+                        "checkStandard": "1、申请权限是否是厅本级2、申请材料是否齐全、符合法定要求3、填报申请内容是否正确、符合要求",
+                        "result": "作出预审是否通过决定，若不通过，告知补正要求及标准",
+                    },
+                ],
+                //办事地点
+                "handingAddress": {
+                    "windowsName": "政务服务中心3楼自然资源厅12号窗口",
+                    "windowsPhone": "0771-5595671",
+                    "windowsTime": "工作日：上午9:00-12:00、下午13:30-16:30",
+                    "windowsAddress": "政务服务中心3楼自然资源厅12号窗口",
+                    "trafficGuide": "乘604路车在市一埌东医院站下车，步行或骑共享单车往东方向行约300m，在十字路口右转约50m即可到达。"
+                },
+                //申请材料
+                "applicationMaterial": [
+                    {
+                        "materialName": "材料名称01",
+                        "materialExample": "材料样本-空白附件",
+                        "materialSource": "申请人自备",
+                        "materialType": "原件",
+                        "materialNeed": "容缺后补",
+                        "materialStandard": "1.原件合法有效；2.电子件清晰，与原件核对无异。",
+
+                    },   {
+                        "materialName": "材料名称02",
+                        "materialExample": "材料样本-空白附件",
+                        "materialSource": "申请人自备",
+                        "materialType": "原件",
+                        "materialNeed": "容缺后补",
+                        "materialStandard": "1.原件合法有效；2.电子件清晰，与原件核对无异。",
+
+                    },
+                ],
             }
         },
 
-        {
-            "eventId": "14",
-            "eventName": "事项名称14",
-            "officeHall": "办理机构",
-            "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
-            "workAttentionAddress": "办事指南地址",
-            "workAttention": {//办事指南
-                "workId": "事项id",
-                "workInfo": "基础信息",
-                "workCondition": "受理条件",
-                "workAddress": "办事地点",
-                "workProcess": "办理流",
-                "workNeed": "申请材料",
-                "workOther": "特别程序",
-                "workFree": "收费标准",
-                "workProblem": "其他问题"
-            }
-        },
- {
-            "eventId": "14",
-            "eventName": "事项名称14",
-            "officeHall": "办理机构",
-            "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
-            "workAttentionAddress": "办事指南地址",
-            "workAttention": {//办事指南
-                "workId": "事项id",
-                "workInfo": "基础信息",
-                "workCondition": "受理条件",
-                "workAddress": "办事地点",
-                "workProcess": "办理流",
-                "workNeed": "申请材料",
-                "workOther": "特别程序",
-                "workFree": "收费标准",
-                "workProblem": "其他问题"
-            }
-        },
- {
-            "eventId": "14",
-            "eventName": "事项名称14",
-            "officeHall": "办理机构",
-            "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
-            "workAttentionAddress": "办事指南地址",
-            "workAttention": {//办事指南
-                "workId": "事项id",
-                "workInfo": "基础信息",
-                "workCondition": "受理条件",
-                "workAddress": "办事地点",
-                "workProcess": "办理流",
-                "workNeed": "申请材料",
-                "workOther": "特别程序",
-                "workFree": "收费标准",
-                "workProblem": "其他问题"
-            }
-        },
- {
-            "eventId": "14",
-            "eventName": "事项名称14",
-            "officeHall": "办理机构",
-            "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
-            "workAttentionAddress": "办事指南地址",
-            "workAttention": {//办事指南
-                "workId": "事项id",
-                "workInfo": "基础信息",
-                "workCondition": "受理条件",
-                "workAddress": "办事地点",
-                "workProcess": "办理流",
-                "workNeed": "申请材料",
-                "workOther": "特别程序",
-                "workFree": "收费标准",
-                "workProblem": "其他问题"
-            }
-        },
- {
-            "eventId": "14",
-            "eventName": "事项名称14",
-            "officeHall": "办理机构",
-            "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
-            "workAttentionAddress": "办事指南地址",
-            "workAttention": {//办事指南
-                "workId": "事项id",
-                "workInfo": "基础信息",
-                "workCondition": "受理条件",
-                "workAddress": "办事地点",
-                "workProcess": "办理流",
-                "workNeed": "申请材料",
-                "workOther": "特别程序",
-                "workFree": "收费标准",
-                "workProblem": "其他问题"
-            }
-        },
- {
-            "eventId": "14",
-            "eventName": "事项名称14",
-            "officeHall": "办理机构",
-            "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
-            "workAttentionAddress": "办事指南地址",
-            "workAttention": {//办事指南
-                "workId": "事项id",
-                "workInfo": "基础信息",
-                "workCondition": "受理条件",
-                "workAddress": "办事地点",
-                "workProcess": "办理流",
-                "workNeed": "申请材料",
-                "workOther": "特别程序",
-                "workFree": "收费标准",
-                "workProblem": "其他问题"
-            }
-        },
- {
-            "eventId": "14",
-            "eventName": "事项名称14",
-            "officeHall": "办理机构",
-            "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
-            "workAttentionAddress": "办事指南地址",
-            "workAttention": {//办事指南
-                "workId": "事项id",
-                "workInfo": "基础信息",
-                "workCondition": "受理条件",
-                "workAddress": "办事地点",
-                "workProcess": "办理流",
-                "workNeed": "申请材料",
-                "workOther": "特别程序",
-                "workFree": "收费标准",
-                "workProblem": "其他问题"
-            }
-        },
- {
-            "eventId": "14",
-            "eventName": "事项名称14",
-            "officeHall": "办理机构",
-            "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
-            "workAttentionAddress": "办事指南地址",
-            "workAttention": {//办事指南
-                "workId": "事项id",
-                "workInfo": "基础信息",
-                "workCondition": "受理条件",
-                "workAddress": "办事地点",
-                "workProcess": "办理流",
-                "workNeed": "申请材料",
-                "workOther": "特别程序",
-                "workFree": "收费标准",
-                "workProblem": "其他问题"
-            }
-        },
- {
-            "eventId": "14",
-            "eventName": "事项名称14",
-            "officeHall": "办理机构",
-            "codeAddress": "暂时没用到，使用的按钮的事项id，拼接的图片地址",
-            "codeItem": "https://citizen.smkzz.com:8014/h5-item-qr/item-html/01.html",
-            "workAttentionAddress": "办事指南地址",
-            "workAttention": {//办事指南
-                "workId": "事项id",
-                "workInfo": "基础信息",
-                "workCondition": "受理条件",
-                "workAddress": "办事地点",
-                "workProcess": "办理流",
-                "workNeed": "申请材料",
-                "workOther": "特别程序",
-                "workFree": "收费标准",
-                "workProblem": "其他问题"
-            }
-        },
 
-    ];
+
+        ];
