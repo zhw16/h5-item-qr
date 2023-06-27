@@ -13,11 +13,9 @@ $('title').html('一事一码·办事政策列表')
 // 获取屏幕高度
 var screenHeight = $(window).height();
 // 输出屏幕高度
-console.log('屏幕高度为: ' + screenHeight + 'px');
 //获取logo和搜索栏高度
 var logoHeight = $(".logo").height();
 var searchHeight = $(".search").height();
-console.log("logo高度和搜索高度分别为：" + logoHeight + "," + searchHeight);
 //给结果设置高度
 $("#retUl").css("height", screenHeight - logoHeight - searchHeight-18).css("overflow-y","auto");
 
@@ -45,8 +43,7 @@ data.forEach(function (item) {
         '</a>' +
         '<div class="content-right">' +
         '<div class="buttons" id="' + item.eventId + '">' +
-        '<button style="margin-right: 0.7em; white-space: nowrap;text-align: center" class="button1" id="' + item.eventId + '">一事一码</button>' +
-        // '<button style="white-space: nowrap;" class="button1" id="' + item.eventId + '">一事一码</button>' +
+        '<button style="margin-right: 0.7em; white-space: nowrap;text-align: center" class="button1" id="' + item.eventId+ '">一事一码</button>' +
          button02 +
         '</div>' +
         '</div>' +
@@ -82,24 +79,20 @@ $("#searchIn").keypress(function (event) {
 if (!isMobile()) {
     $(".button1").hover(
         function (e) {
-            console.log(e);
             var eventId = $(this).attr("id"); // 获取按钮所在链接的地址
             var x = e.clientX;
             var y = e.clientY;
-            $("<img>")
-                .attr("src", "https://citizen.smkzz.com:8014/qr/" + eventId + ".jpg")
+            $("<img alt='一事一码'>")
+                //使用button1的id，将二维码地址赋值给他
+                .attr("src", "qr-img/"+eventId+".jpg")
                 .addClass("hover-qrcode")
                 .css({
                     //position: "absolute",
                     top: y + "px", /* 根据需要调整图片的位置 */
                     left: x + "px", /* 根据需要调整图片的位置 */
-                    //transform: "translateX(-50%)",
                     width: "100px", /* 根据需要调整图片的尺寸 */
                     height: "100px", /* 根据需要调整图片的尺寸 */
-                    //background-size: "cover",
-                    //background-position: " center",
                     "z-index": "99999", /* 确保图片位于其他内容之上 */
-                    //pointer-events: "none", /* 防止图片遮挡按钮的交互 */
                 })
                 .appendTo($(this).parent().parent());
             // 当鼠标悬浮时添加一个类名来改变当前文字大小
@@ -121,15 +114,15 @@ if (!isMobile()) {
         var eventId = $(this).attr("id"); // 获取按钮所在链接的地址
         window.location.href = '#';
     });
-} else {
-    //点击button1跳转页面，对应的一事一码
+} else {//手机端
+    //点击button1跳转页面，对应的一事一码的手机端地址
     $('.button1').click(function () {
         var eventId = $(this).parent().attr("id"); // 获取按钮所在链接的地址
-        window.location.href = 'item-html/01.html';
+        window.location.href = 'item-html/'+eventId+'.html';
     });
 }
 
-//点击button2跳转页面
+//点击button2跳转页面，电脑端办事指南
 $('.button2').click(function () {
     var eventId = $(this).parent().attr("id"); // 获取按钮所在链接的地址
     window.location.href = './index-guide.html?eventId=' + eventId;

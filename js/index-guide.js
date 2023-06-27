@@ -23,57 +23,28 @@ console.log('当前事项id: ' + eventId); // 输出事件ID到控制台，方�
 // 根据事件ID找到当前事项
 const eventItem = data.find(item => item.eventId === eventId);
 console.log(eventItem);
-
 $(".my_title").html(eventItem.eventName);
 //办事指南上方
-var table_top_html =
-    '<tbody>' +
-    '<tr>' +
-    '<th>办理部门</th>' +
-    '<td>' + eventItem.workAttention.workDepartment + '</td>' +
-    '<th>服务对象</th>' +
-    '<td>' + eventItem.workAttention.serviceObject + '</td>' +
-    ' </tr>' +
-    '<tr>' +
-    '<th>办理时间</th>' +
-    '<td>' + eventItem.workAttention.workTime + '</td>' +
-    ' <th>办理地点</th>' +
-    '<td>' + eventItem.workAttention.workAddress + '</td>' +
-    '</tr>' +
-    '<tr>' +
-    '<th>咨询方式</th>' +
-    ' <td>' + eventItem.workAttention.consultWay + '</td>' +
-    '<th>监督投诉方式</th>' +
-    '<td>' + eventItem.workAttention.complaintWay + '</td>' +
-    '</tr>' +
-    ' </tbody>';
-$(".table-top").html(table_top_html);
+$(".workDepartment").html(eventItem.workAttention.workDepartment);
+$(".serviceObject").html(eventItem.workAttention.serviceObject);
+$(".workTime").html(eventItem.workAttention.workTime);
+$(".workAddress").html(eventItem.workAttention.workAddress);
+$(".consultWay").html(eventItem.workAttention.consultWay);
+$(".complaintWay").html(eventItem.workAttention.complaintWay);
 //办事指南下方
 
 //办事指南tab1 基础信息
-var table_tab1_html =
-    ' <tbody><tr><th> 事项名称 </th>' +
-    '<td>' + eventItem.workAttention.basicInfo.eventName + '</td>' +
-    '<th>事项类型</th>' +
-    '<td>' + eventItem.workAttention.basicInfo.eventType + '</td></tr>' +
-    '<tr><th>是否网办</th>' +
-    ' <td>' + eventItem.workAttention.basicInfo.onlineOrNot + '</td>' +
-    '<th>年检或年审</th>' +
-    '<td>' + eventItem.workAttention.basicInfo.as + '</td></tr>' +
-    '<tr><th>办理形式</th>' +
-    '<td>' + eventItem.workAttention.basicInfo.handingType + '</td>' +
-    '<th>办理进度查询途径</th>' +
-    '<td>' + eventItem.workAttention.basicInfo.queryType + '</td></tr>' +
-    '<tr><th>查询方式</th>' +
-    '<td>' + eventItem.workAttention.basicInfo.progressQuery + '</td></tr>' +
-    '<tr> <th>审查方式及标准</th>' +
-    '<td>' + eventItem.workAttention.basicInfo.standard + '</td>' +
-    ' </tr> </tbody>';
-$(".table-tab1").html(table_tab1_html);
+$(".eventName").html(eventItem.workAttention.basicInfo.eventName);
+$(".eventType").html(eventItem.workAttention.basicInfo.eventType);
+$(".onlineOrNot").html(eventItem.workAttention.basicInfo.onlineOrNot);
+$(".as").html(eventItem.workAttention.basicInfo.as);
+$(".handingType").html(eventItem.workAttention.basicInfo.handingType);
+$(".queryType").html(eventItem.workAttention.basicInfo.queryType);
+$(".progressQuery").html(eventItem.workAttention.basicInfo.progressQuery);
+$(".standard").html(eventItem.workAttention.basicInfo.standard);
 
 //办事指南tab2 受理条件
-var table_tab2_html='<div class="tab2Text">'+eventItem.workAttention.HandlingCondition.HandlingCondition+'</div>';
-$(".table-tab2").html(table_tab2_html);
+$(".tab2Text").html(eventItem.workAttention.HandlingCondition.HandlingCondition);
 
 //tab3办理流程
 // 需要遍历这些流程
@@ -81,12 +52,12 @@ console.log(eventItem.workAttention.handlingProcess);
 var table_tab3_html='';
 $.each(eventItem.workAttention.handlingProcess, function (index, handlingProcess) {
     table_tab3_html +=
-    '<tr><td><div>'+handlingProcess.processName+'</div></td>'+
-    '<td><div>'+handlingProcess.Procedure+'</div></td>'+
-    '<td><div>'+handlingProcess.worker+'</div></td>'+
-    '<td><div>'+handlingProcess.limitTime+'</div></td>'+
-    '<td><div>'+handlingProcess.checkStandard+'</div></td>'+
-    '<td><div>'+handlingProcess.result+'</div></td></tr>'
+    '<tr><td>'+handlingProcess.processName+'</td>'+
+    '<td>'+handlingProcess.Procedure+'</td>'+
+    '<td>'+handlingProcess.worker+'</td>'+
+    '<td>'+handlingProcess.limitTime+'</td>'+
+    '<td>'+handlingProcess.checkStandard+'</td>'+
+    '<td>'+handlingProcess.result+'</td></tr>'
 });
 $(".table-tab3").html(table_tab3_html);
 
@@ -104,12 +75,12 @@ console.log(eventItem.workAttention.applicationMaterial);
 var table_tab5_html='';
 $.each(eventItem.workAttention.applicationMaterial, function (index, applicationMaterial) {
     table_tab5_html +=
-        '<tr><td><div>'+applicationMaterial.materialName+'</div></td>'+
-        '<td><div>'+applicationMaterial.materialExample+'</div></td>'+
-        '<td><div>'+applicationMaterial.materialSource+'</div></td>'+
-        '<td><div>'+applicationMaterial.materialType+'</div></td>'+
-        '<td><div>'+applicationMaterial.materialNeed+'</div></td>'+
-        '<td><div>'+applicationMaterial.materialStandard+'</div></td></tr>'
+        '<tr><td>'+applicationMaterial.materialName+'</td>'+
+        '<td>'+applicationMaterial.materialExample+'</td>'+
+        '<td>'+applicationMaterial.materialSource+'</td>'+
+        '<td>'+applicationMaterial.materialType+'</td>'+
+        '<td>'+applicationMaterial.materialNeed+'</td>'+
+        '<td>'+applicationMaterial.materialStandard+'</td></tr>'
 });
 $(".table-tab5").html(table_tab5_html);
 
