@@ -1,4 +1,4 @@
-$('title').html('一事一码-办事指南')
+$('title').html('一事一码·办事指南')
 $(document).ready(function () {
     $('tbody tr').each(function () {
         var $td = $(this).find('td');

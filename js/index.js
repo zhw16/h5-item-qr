@@ -8,7 +8,7 @@ function isMobile() {
     return getArr.length ? true : false;
 }
 
-$('title').html('一事一码-办事政策列表')
+$('title').html('一事一码·办事政策列表')
 // index的result高度
 // 获取屏幕高度
 var screenHeight = $(window).height();
@@ -45,7 +45,8 @@ data.forEach(function (item) {
         '</a>' +
         '<div class="content-right">' +
         '<div class="buttons" id="' + item.eventId + '">' +
-        '<button style="margin-right: 0.8em" class="button1" id="' + item.eventId + '">一事一码</button>' +
+        '<button style="margin-right: 0.7em; white-space: nowrap;text-align: center" class="button1" id="' + item.eventId + '">一事一码</button>' +
+        // '<button style="white-space: nowrap;" class="button1" id="' + item.eventId + '">一事一码</button>' +
          button02 +
         '</div>' +
         '</div>' +
@@ -53,13 +54,10 @@ data.forEach(function (item) {
         '</li>';
 });
 $(".ret-ul").append(html);
-
-
 //搜索事项方法
 function searchItems() {
     var keyword = $("#searchIn").val(); // 获取搜索框中的关键词
     keyword = keyword.trim().toLowerCase(); // 去除首尾空格并转换为小写
-
     $(".poi-title").each(function () {
         var itemName = $(this).text().toLowerCase(); // 获取每个事项名称并转换为小写
         if (itemName.includes(keyword)) {
