@@ -139,10 +139,16 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    /*background-image: url(../assets/img_1.png);*/
     background-image: url(../assets/logo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 20%;
     width: 100%;
 }
+
+
 
 .myText {
     font-size: 2em;

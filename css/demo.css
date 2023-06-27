@@ -472,9 +472,9 @@ select:focus::-ms-value, input[type=text]:focus::-ms-value,input[type=date]:focu
   border-bottom: 1px solid #ddd;
   padding: 1rem 0;
 }
-.poibox:last-child {
-  border-bottom-width: 0;
-}
+/*.poibox:last-child {*/
+/*  border-bottom-width: 0;*/
+/*}*/
 .poi-content {
   padding-left: 1rem;
   width: 100%;

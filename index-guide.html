@@ -38,7 +38,7 @@
 
 
     <div class="tabs-container">
-        <ul class="nav nav-tabs nav-fill" id="tab-calu" style="height: 4em">
+        <ul class="nav nav-tabs nav-fill" id="tab-calu">
             <!-- 默认激活 -->
             <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#tab1">基础信息</a></li>
             <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab2">受理条件</a></li>
@@ -57,14 +57,14 @@
             </div>
 
             <div id="tab2" class="tab-pane mt-3 table-tab2">
-                <!--这是第二个页面-->
+                <!--这是第二个页面  受理条件-->
                 <div class="tab2Text ">
 
                 </div>
 
             </div>
             <div id="tab3" class="tab-pane mt-3">
-                <!--这是第三个页面-->
+                <!--这是第三个页面 办理流程-->
                 <table class="table table-3">
                     <thead>
                     <tr>
@@ -76,32 +76,12 @@
                         <th>办理结果</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <div class="table-cell-content">收件与受理</div>
-                        </td>
-                        <td>
-                            <div class="table-cell-content">网上预审（所用时限不计入承诺办结时限）</div>
-                        </td>
-                        <td>
-                            <div class="table-cell-content">审批办人员</div>
-                        </td>
-                        <td>
-                            <div class="table-cell-content">3</div>
-                        </td>
-                        <td>
-                            <div class="table-cell-content">1、申请权限是否是厅本级2、申请材料是否齐全、符合法定要求3、填报申请内容是否正确、符合要求</div>
-                        </td>
-                        <td>
-                            <div class="table-cell-content">作出预审是否通过决定，若不通过，告知补正要求及标准</div>
-                        </td>
-                    </tr>
+                    <tbody class="table-tab3">
                     <!-- 其他行 -->
                     </tbody>
                 </table>
             </div>
-            <div id="tab4" class="tab-pane mt-3">
+            <div id="tab4" class="tab-pane mt-3 table-tab4">
                 <!--这是第四个页面，办事地点-->
                 <table class="table table-4">
                     <thead>
@@ -116,21 +96,19 @@
                     <tbody>
                     <tr>
                         <td>
-                            <div class="table-cell-content">政务服务中心3楼自然资源厅12号窗口</div>
+                            <div class="windowsName"></div>
                         </td>
                         <td>
-                            <div class="table-cell-content">0771-5595671</div>
+                            <div class="windowsPhone">0771-</div>
                         </td>
                         <td>
-                            <div class="table-cell-content">工作日：上午9:00-12:00、下午13:30-16:30</div>
+                            <div class="windowsTime">工作日：上午9:00-12:00、下午13:30-16:30</div>
                         </td>
                         <td>
-                            <div class="table-cell-content">工作日：上午9:00-12:00、下午13:30-16:30</div>
+                            <div class="windowsAddress"></div>
                         </td>
                         <td>
-                            <div class="table-cell-content">
-                                可乘南宁地铁1号线至金湖广场站下车C2出口左转步行或骑共享单车沿金浦路至第三个十字路口后右转直行约208m即可到达；或乘604路车在市一埌东医院站下车，步行或骑共享单车往东方向行约300m，在十字路口右转约50m即可到达。
-                            </div>
+                            <div class="trafficGuide">交通指引</div>
                         </td>
                     </tr>
                     </tbody>
@@ -149,27 +127,8 @@
                         <th>受理标准</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <div class="table-cell-content">资质申请表</div>
-                        </td>
-                        <td>
-                            <div class="table-cell-content">空白附件</div>
-                        </td>
-                        <td>
-                            <div class="table-cell-content">申请人自备</div>
-                        </td>
-                        <td>
-                            <div class="table-cell-content">原件</div>
-                        </td>
-                        <td>
-                            <div class="table-cell-content">容缺后补</div>
-                        </td>
-                        <td>
-                            <div class="table-cell-content">1.原件合法有效；2.电子件清晰，与原件核对无异。</div>
-                        </td>
-                    </tr>
+                    <tbody class="table-tab5">
+                    <!--                    在这里遍历数据-->
                     </tbody>
                 </table>
             </div>
@@ -185,7 +144,6 @@
 <script>
     // 初始化
     var vConsole = new VConsole();
-    console.log(1230);
 </script>
 </body>
 </html>

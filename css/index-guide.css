@@ -29,8 +29,10 @@ body {
         max-width: 1280px;
     }
 }
-.nav-tabs{
-    background-color: #FFFFFF;
+.nav-tabs {
+    background-color: #E6EFFF;
+    height: 4em;
+
 }
 /*按钮激活颜色*/
 .nav-tabs .nav-link.active {
