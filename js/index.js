@@ -35,7 +35,7 @@ if (isMobile()) {
 data.forEach(function (item) {
     html += '<li class="poibox" data-ps="data.position" data-name="data.name">' +
         '<div class="poi-content">' +
-        '<a class="a-left" href="' + item.codeItem + '">' +
+        '<a class="a-left" href="item-html/' + item.eventId + '.html">' +
         '<div class="content-left">' +
         '<span class="title poi-title">' + item.eventName + '</span>' +
         '<div class="poi-address">' + item.officeHall + '</div>' +
