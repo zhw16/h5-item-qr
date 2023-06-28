@@ -110,7 +110,6 @@ $(document).on('click', '.btn-submit-form', function () {
     //**办理流程
     var tableDataTab3 = [];
     $('.table-tab3  tr').each(function () {
-        console.log("进入循环");
         console.log($(this).find('.processName').val());
         const rowData = {
             processName: $(this).find('.processName').val(),
@@ -180,7 +179,6 @@ $(document).on('click', '.btn-submit-form', function () {
             applicationMaterial: tableDataTab5,
         }
     };
-    console.log("文件内容");
     console.log(finalJson);
 
     /**
