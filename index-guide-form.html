@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="./bootstrap4.0.0/bootstrap.min.css">
     <link rel="stylesheet" href="css/index-guide.css"/>
     <style>
+        .btn-submit-form:active {
+            transform: translateY(1px);
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /*按钮激活颜色*/
+        .nav-tabs .nav-link.active {
+            background-color: #7eaffd; /* 替换为你想要的颜色值 */
+            color: #ffffff; /* 替换为你想要的文本颜色值 */
+        }
+
     </style>
 </head>
 <body>
@@ -68,21 +79,17 @@
                     </tr>
                     <tr>
                         <th>办理形式</th>
-                        <td><input type="text" class="form-control handingType"
-                                                       placeholder="输入办理形式"></td>
+                        <td><input type="text" class="form-control handingType" placeholder="输入办理形式"></td>
                         <th>办理进度查询途径</th>
-                        <td><input type="text" class="form-control queryType"
-                                                     placeholder="输入办理进度查询途径"></td>
+                        <td><input type="text" class="form-control queryType" placeholder="输入办理进度查询途径"></td>
                     </tr>
                     <tr>
                         <th>查询方式</th>
-                        <td><input type="text" class="form-control progressQuery"
-                                                         placeholder="查询方式"></td>
+                        <td><input type="text" class="form-control progressQuery" placeholder="查询方式"></td>
                     </tr>
                     <tr>
                         <th>审查方式及标准</th>
-                        <td><textarea class="form-control mt-2 standard" style="height:10em;resize: none;"
-                                      placeholder="输入审查方式及标准，需要换行请输入：#"></textarea></td>
+                        <td><textarea class="form-control mt-2 standard" style="height:10em;resize: none;" placeholder="输入审查方式及标准，需要换行请输入：#"></textarea></td>
                     </tr>
                     </tbody>
                 </table>
@@ -91,8 +98,7 @@
             <ul class="nav nav-tabs nav-fill">
                 <li class="nav-item"><a class="nav-link active" data-toggle="tab">受理条件</a></li>
             </ul>
-            <textarea class="form-control  tab2Text" style="width: 98%;height: 10em;resize: none;"
-                      placeholder="输入受理条件，需要换行输入：#"></textarea>
+            <textarea class="form-control  tab2Text" style="width: 98%;height: 10em;resize: none;" placeholder="输入受理条件，需要换行输入：#"></textarea>
 
             <ul class="nav nav-tabs nav-fill">
                 <li class="nav-item"><a class="nav-link active" data-toggle="tab">办理流程</a></li>

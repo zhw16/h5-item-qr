@@ -104,7 +104,6 @@ $(document).on('click', '.btn-submit-form', function () {
     const tableDataTab2 = {
         HandlingCondition: $(".tab2Text").val(),
     };
-    // console.log(tableDataTab2);
 
 
     //**办理流程
@@ -192,7 +191,6 @@ $(document).on('click', '.btn-submit-form', function () {
         element.setAttribute('download', eventId);
         element.style.display = 'none';
         document.body.appendChild(element);
-
         element.click();
         document.body.removeChild(element);
     }
