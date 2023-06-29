@@ -7,8 +7,8 @@ function isMobile() {
     let getArr = Agents.filter(i => userAgentInfo.includes(i));
     return getArr.length ? true : false;
 }
-
-$('title').html('一事一码·办事政策列表')
+console.log("进入js")
+$('title').html('一事一码专区');
 // index的result高度
 // 获取屏幕高度
 var screenHeight = $(window).height();
@@ -18,24 +18,26 @@ var logoHeight = $(".logo").height();
 var searchHeight = $(".search").height();
 //给结果设置高度
 $("#retUl").css("height", screenHeight - logoHeight - searchHeight-18).css("overflow-y","auto");
-
+console.log("高度适应完毕")
 import {data} from "./sourcedata.js";
 //要拼接的数据
 var html = '';
 //办事指南
 var button02 = '';
+console.log("判断设备PC/手机")
 if (isMobile()) {
     //隐藏
     button02 = '<button style="display: none" class="button2" id="">办事指南</button>';
 } else {
     button02 = '<button class="button2" id="">办事指南</button>';
 }
-
+console.log("展示数据")
 //默认展示全部
 data.forEach(function (item) {
     html += '<li class="poibox" data-ps="data.position" data-name="data.name">' +
         '<div class="poi-content">' +
-        '<a class="a-left" href="item-html/' + item.eventId + '.html">' +
+        '<a class="a-left" href="item-html/01.htm">' +
+        // '<a class="a-left" href="item-html/' + item.eventId + '.html">' +
         '<div class="content-left">' +
         '<span class="title poi-title">' + item.eventName + '</span>' +
         '<div class="poi-address">' + item.officeHall + '</div>' +
@@ -51,6 +53,7 @@ data.forEach(function (item) {
         '</li>';
 });
 $(".ret-ul").append(html);
+console.log("搜索")
 //搜索事项方法
 function searchItems() {
     var keyword = $("#searchIn").val(); // 获取搜索框中的关键词
@@ -118,7 +121,8 @@ if (!isMobile()) {
     //点击button1跳转页面，对应的一事一码的手机端地址
     $('.button1').click(function () {
         var eventId = $(this).parent().attr("id"); // 获取按钮所在链接的地址
-        window.location.href = 'item-html/'+eventId+'.html';
+        // window.location.href = 'item-html/'+eventId+'.html';
+        window.location.href = 'item-html/01.htm';
     });
 }
 
