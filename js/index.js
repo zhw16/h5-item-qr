@@ -7,7 +7,7 @@ function isMobile() {
     let getArr = Agents.filter(i => userAgentInfo.includes(i));
     return getArr.length ? true : false;
 }
-console.log("进入js")
+// console.log("进入js")
 $('title').html('一事一码专区');
 // index的result高度
 // 获取屏幕高度
@@ -18,20 +18,20 @@ var logoHeight = $(".logo").height();
 var searchHeight = $(".search").height();
 //给结果设置高度
 $("#retUl").css("height", screenHeight - logoHeight - searchHeight-18).css("overflow-y","auto");
-console.log("高度适应完毕")
+// console.log("高度适应完毕")
 import {data} from "./sourcedata.js";
 //要拼接的数据
 var html = '';
 //办事指南
 var button02 = '';
-console.log("判断设备PC/手机")
+// console.log("判断设备PC/手机")
 if (isMobile()) {
     //隐藏
     button02 = '<button style="display: none" class="button2" id="">办事指南</button>';
 } else {
     button02 = '<button class="button2" id="">办事指南</button>';
 }
-console.log("展示数据")
+// console.log("展示数据")
 //默认展示全部
 data.forEach(function (item) {
     html += '<li class="poibox" data-ps="data.position" data-name="data.name">' +
@@ -53,7 +53,7 @@ data.forEach(function (item) {
         '</li>';
 });
 $(".ret-ul").append(html);
-console.log("搜索")
+// console.log("搜索")
 //搜索事项方法
 function searchItems() {
     var keyword = $("#searchIn").val(); // 获取搜索框中的关键词
